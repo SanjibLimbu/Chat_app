@@ -66,6 +66,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     email: email,
                     password: password,
                   );
+
                   if (!mounted) return;
 
                   Navigator.pushNamed(context, 'chat_screen');
