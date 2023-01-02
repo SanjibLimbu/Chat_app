@@ -75,9 +75,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                       password: password,
                     );
 
-                    // if (!mounted) return;
+                    if (!mounted) return;
 
-                    // ignore: use_build_context_synchronously
                     Navigator.pushNamed(context, 'chat_screen');
                     setState(() {
                       _spinner = false;
